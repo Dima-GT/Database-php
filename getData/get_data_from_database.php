@@ -6,7 +6,7 @@
         $result = mysqli_query($link, $query);
         if ($result) {
             $rows = mysqli_num_rows($result);
-            echo "<table style='border: 1px solid #091234; border-radius: 3px; margin-top: 20px'>";
+            echo "<table style='margin-top: 20px;'>";
             $num_col = mysqli_num_fields($result);
             echo "<tr>";
             for ($i = 0; $i < $num_col; $i++)

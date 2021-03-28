@@ -31,6 +31,7 @@ a:hover{
 }
 
 .title {
+    text-transform: uppercase;
     margin: 10px 0 0 0;
     font-size: 28px;
     text-align: center;
@@ -184,6 +185,13 @@ a:hover{
     border: 1px solid #295d8a;
     border-radius: 5px;
     background: #c3ced9;
+}
+
+.index-link{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #172034;
+    width: calc(100% - 20px);
 }
 
 .form-wrapper {
