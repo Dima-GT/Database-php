@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <item>
+        <loc>http://localhost/lab10</loc>
+        <image>http://localhost/lab10/lab10.png</image>
+        <lastmod>2021-03-23T09:12:19+00:00</lastmod>
+        <description> d</description>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </item>
+    <item>
+        <loc>http://localhost/lab11</loc>
+        <image>http://localhost/lab10/lab11.png</image>
+        <lastmod>2021-03-23T11:38:19+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </item>
+    <item>
+        <loc>http://localhost/lab12</loc>
+        <image>http://localhost/lab10/lab12.png</image>
+        <lastmod>2021-03-24T01:29:19+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </item>
+    <item>
+        <loc>http://localhost/lab13</loc>
+        <image>http://localhost/lab10/lab13.png</image>
+        <lastmod>2021-03-24T03:38:19+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </item>
+    <item>
+        <loc>http://localhost/lab14</loc>
+        <image>http://localhost/lab10/lab14.png</image>
+        <lastmod>2021-03-24T05:42:19+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </item>
+</urlset>

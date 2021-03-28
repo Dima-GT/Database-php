@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /
+Crawl-delay: 2
+Sitemap: / sitemap.xml
+
+User-agent: Yandex
+Disallow: /auth/
+User-agent: Googlebot
+Disallow: /auth/
