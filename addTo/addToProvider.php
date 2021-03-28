@@ -1,7 +1,7 @@
 ﻿<script>
     function CheckData(f)
     {
-        if (confirm("Ви впевнені, що хочете відправити дані?")) {
+        if (confirm("Are you sure you want to send data?")) {
             f.submit();
         }
     }

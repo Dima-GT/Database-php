@@ -6,7 +6,7 @@ echo '<h2 class="title">Bugreport</h2>';
 ?>
     <script type="text/javascript">
         function checkData(f) {
-            if (confirm("Ви впевнені, що хочете відправити листа?")) {
+            if (confirm("Are you sure you want to send data?")) {
                 f.submit();
             }
         }
@@ -16,7 +16,7 @@ echo '<h2 class="title">Bugreport</h2>';
             let x = document.forms["myForm"]["email"].value;
             let emailReg = new RegExp("^[\.\-_A-Za-z0-9]+?@[\.\-A-Za-z0-9]+?\.[A-Za-z0-9]{2,6}$");
             if (!(emailReg.test(x)))
-                emailErr.innerHTML = 'Не правильний адрес e-mail!!!';
+                emailErr.innerHTML = 'wrong email adress!';
             else emailErr.innerHTML = '';
         }
     </script>
@@ -47,11 +47,11 @@ $page = trim($_POST['page']);
 $bug = trim($_POST['bug']);
 $toaddress = "dimon200117@gmail.com";
 $subject = "Виявлена помилка";
-$mailcontent = "Імя клієнта: " . $name . "\n" .
-    "E-mail клієнта: " . $email . "\n" .
-    "Дата виявлення: \n" . $date . "\n" .
-    "Сторінка, на якій виявлено помилку: " . $page . "\n" .
-    "Зміст помилки: " . $bug . "\n";
+$mailcontent = "Client name: " . $name . "\n" .
+    "Client e-mail: " . $email . "\n" .
+    "Date: \n" . $date . "\n" .
+    "The page on which the error occurred:: " . $page . "\n" .
+    "Contents of the error: " . $bug . "\n";
 $fromaddress = "From: $email";
 mail($toaddress, $subject, $mailcontent, $fromaddress);
 

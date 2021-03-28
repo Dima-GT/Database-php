@@ -1,6 +1,6 @@
 ﻿<script>
     function CheckData(f) {
-        if (confirm("Ви впевнені, що хочете відправити дані?")) {
+        if (confirm("Are you sure you want to send data?")) {
             f.submit();
         }
     }
@@ -11,16 +11,16 @@
           class="add-form">
         <label for="form_1">Product id:</label>
         <input id='form_1' class="add-form-input" type="number"
-               name="product_id" value="0" min="0" max="999" step="0.5">
+               name="product_id" min="0" max="9999" step="1">
         <br> <label for="form_2">Product name:</label>
         <input id='form_2' class="add-form-input" type="text"
-               name="product_name" value="0" min="0" max="999" step="0.5">
+               name="product_name">
         <br> <label for="form_3">Provider ID:</label>
         <input id='form_3' class="add-form-input" type="number"
-               name="product_provider" value="0" min="0" max="999" step="0.5">
+               name="product_provider" min="0" max="9999" step="1">
         <br> <label for="form_4">Product price:</label>
         <input id='form_4' class="add-form-input" type="number"
-               name="product_price" value="0" min="0" max="999" step="0.5">
+               name="product_price" min="0" max="9999" step="1">
         <br> <input type="submit" class="button" value="Add">
     </form>
 </div>

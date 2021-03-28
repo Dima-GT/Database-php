@@ -61,7 +61,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="t"><i class="fas fa-search"></i></a>
-                            <input class="search" type="text">
+                            <input class="add-form-input search" type="text">
                         </li>
                         <?php
                         if (isset($_SESSION['login'])) {

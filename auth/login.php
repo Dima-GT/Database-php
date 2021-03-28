@@ -1,7 +1,6 @@
-﻿
-<?php
+﻿<?php
 require '../header/header.php';
-//session_start();
+echo '<section class="main marketings">';
 // Генерую випадкковий рядок.
 function generateCode($length = 6)
 {
@@ -41,15 +40,26 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-<form method="POST">
-    <h3>Щоб отримати доступ до сайту, будь ласка авторизуйтесь.</h3>
-    Логин <input name="login" type="text" required><br>
-    Пароль <input name="password" type="password" required><br>
-    Не прикріплювати до ІР (небезпечно) <input type="checkbox"
-                                               name="not_attach_ip"><br>
-    <a href="register.php">Зареєструватись</a>
-    <input name="submit" type="submit" value="Увійти">
-</form>
-
+    <div class="form-wrapper">
+        <h2 class="title">authorization</h2>
+        <form method="POST">
+            <h3>To access the website, please log in.</h3>
+            <label for="form_1">Login:</label><br><input class="add-form-input"
+                                                    id="form_1" name="login"
+                                                    type="text" required><br>
+            <br><label for="form_2">Password:</label><br><input class="add-form-input"
+                                                        id="form_2"
+                                                        name="password"
+                                                        type="password"
+                                                        required><br>
+            <br><label for="form_3">Do not attach to IP (dangerous)</label>
+            <input
+                    id="form_3" type="checkbox"
+                    name="not_attach_ip"><br><br>
+            <a href="register.php">Register</a>
+            <input name="submit" class="button" type="submit" value="Login">
+        </form>
+    </div>
+    </section>
 <?php
 require '../footer/footer.php';

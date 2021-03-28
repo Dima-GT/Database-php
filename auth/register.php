@@ -1,6 +1,7 @@
 ﻿<?php
+require '../header/header.php';
+echo '<section class="main marketings">';
 require '../connection/connection.php';
-require '../index.php';
 if (isset($_POST['submit'])) {
     $err = [];
 
@@ -36,13 +37,15 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-
-    <form method="POST">
-        <h3>Реєстрація:</h3>
-        Логін <input name="login" type="text" required><br>
-        Пароль <input name="password" type="password" required><br>
-        Вже зареєстровані? <a href="login.php">Увійти</a><br>
-        <input name="submit" type="submit" value="Зареєструватись">
-    </form>
+    <div class="form-wrapper">
+        <h2 class="title">registration</h2>
+        <form method="POST">
+            <br><label for="form_1">Login:</label><br><input id='form_1' class="add-form-input" name="login" type="text" required><br>
+            <br><label for="form_1">Password:</label><br><input id='form_1' class="add-form-input" name="password" type="password" required><br>
+            <br><a href="login.php">Login</a>
+            <input name="submit" class="button" type="submit" value="Register">
+        </form>
+    </div>
+    </section>
 <?php
 require '../footer/footer.php';

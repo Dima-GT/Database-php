@@ -9,9 +9,7 @@ a{
 a:hover{
     color: #00c7c0;
 }
-
 .body{
-
     color: #cae8f5;
     height: 100%;
     font-family: 'Roboto', regular;
@@ -222,6 +220,9 @@ a:hover{
 }
 
 .add-form-input{
+    font-size: 18px;
+    font-weight: bold;
+    color: #063270;
     border: 1px solid #295d8a;
     border-radius: 5px;
     background: #c3ced9;
