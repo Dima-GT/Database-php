@@ -13,6 +13,6 @@ if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])) {
         exit;
     }
 } else {
-    print "Включите куки";
+    print "Включіть куки";
 }
 ?>

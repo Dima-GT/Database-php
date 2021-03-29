@@ -45,13 +45,16 @@ if (isset($_POST['submit'])) {
         <form method="POST">
             <h3>To access the website, please log in.</h3>
             <label for="form_1">Login:</label><br><input class="add-form-input"
-                                                    id="form_1" name="login"
-                                                    type="text" required><br>
-            <br><label for="form_2">Password:</label><br><input class="add-form-input"
-                                                        id="form_2"
-                                                        name="password"
-                                                        type="password"
-                                                        required><br>
+                                                         id="form_1"
+                                                         name="login"
+                                                         type="text"
+                                                         required><br>
+            <br><label for="form_2">Password:</label><br><input
+                    class="add-form-input"
+                    id="form_2"
+                    name="password"
+                    type="password"
+                    required><br>
             <br><label for="form_3">Do not attach to IP (dangerous)</label>
             <input
                     id="form_3" type="checkbox"

@@ -40,8 +40,16 @@ if (isset($_POST['submit'])) {
     <div class="form-wrapper">
         <h2 class="title">registration</h2>
         <form method="POST">
-            <br><label for="form_1">Login:</label><br><input id='form_1' class="add-form-input" name="login" type="text" required><br>
-            <br><label for="form_1">Password:</label><br><input id='form_1' class="add-form-input" name="password" type="password" required><br>
+            <br><label for="form_1">Login:</label><br><input id='form_1'
+                                                             class="add-form-input"
+                                                             name="login"
+                                                             type="text"
+                                                             required><br>
+            <br><label for="form_1">Password:</label><br><input id='form_1'
+                                                                class="add-form-input"
+                                                                name="password"
+                                                                type="password"
+                                                                required><br>
             <br><a href="login.php">Login</a>
             <input name="submit" class="button" type="submit" value="Register">
         </form>

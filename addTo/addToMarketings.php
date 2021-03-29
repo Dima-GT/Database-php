@@ -11,11 +11,11 @@
 
     <form method="post" onsubmit="CheckData(this); return false;" class="add-form">
     <label for="form_1">Product id:</label>
-    <input id='form_1' class="add-form-input" type="number" name="id_marketing" min="0" max="999" step=1>
+    <input id='form_1' class="add-form-input" type="number" name="id_marketing" min="0" max="9999" step=1>
     <br><label for="form_2">Marketplace id:</label>
-    <input id='form_2' class="add-form-input" type="number" name="place" min="0" max="999" step="1">
+    <input id='form_2' class="add-form-input" type="number" name="place" min="0" max="9999" step="1">
     <br><label for="form_3">Number of pieces:</label>
-    <input id='form_3' class="add-form-input" type="number" name="pieces" min="0" max="999" step="1">
+    <input id='form_3' class="add-form-input" type="number" name="pieces" min="0" max="9999" step="1">
     <br><label for="form_4">Mark-up:</label>
     <input id='form_4' class="add-form-input" type="text" name="markup" min="0" max="9999" step="1">
     <br><label for="form_5">Date of data entry:</label>

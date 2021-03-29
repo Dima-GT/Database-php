@@ -36,7 +36,7 @@ require '../connection/connection.php';
             }
             $num++;
             if ($num_img_row == 2) {
-                echo "<td style='border: 1px solid #091234; border-radius: 3px; margin-top: 20px'><img src=" ."http://localhost/site/". $col_value . "></td>";
+                echo "<td style='border: 1px solid #091234; border-radius: 3px; margin-top: 20px;'><img style=' max-width: 80px' src=" ."http://localhost/site/". $col_value . "></td>";
             } else
                 echo "<td style='border: 1px solid #091234; border-radius: 3px; margin-top: 20px;  padding: 10px'>$col_value</td>";
             $num_img_row++;

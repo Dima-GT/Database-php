@@ -24,14 +24,14 @@ if (!empty($_POST['provider_name'])) {
     $provider_name = $_POST['provider_name'];
     $provider_logo = '/img/';
     if(is_uploaded_file($_FILES["filename"]["tmp_name"])){
-        move_uploaded_file($_FILES["filename"]["tmp_name"], "./img/".$_FILES["filename"]["name"]);
+        move_uploaded_file($_FILES["filename"]["tmp_name"], "../img/".$_FILES["filename"]["name"]);
         $temp = $_FILES['filename']['name'];
         $provider_logo = $provider_logo.$temp;
     } else {
-        echo("Виникла помилка при завантаженні лого");
+        echo("An error occurred while loading the logo");
     }
 
-    $query = "INSERT INTO provider VALUES('$provider_id', '$provider_name','$provider_logo')";
+    $query = "INSERT INTO providers VALUES('$provider_id', '$provider_name','$provider_logo')";
     require_once '../connection/connection.php';
     $result = mysqli_query($link, $query);
 }

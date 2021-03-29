@@ -8,7 +8,7 @@ require '../getData/get_data_from_database.php';
 require '../addTo/addToMarketplaces.php';
 $table = 'marketplaces';
 $query = "SELECT * FROM marketplaces";
-$arr = array('ID', 'Торгова точка');
+$arr = array('Marketplace ID', 'Marketplace name');
 ?>
 <div class="form-wrapper marketings-wrapper">
     <h2 class="title">Marketings table</h2>
